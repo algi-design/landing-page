@@ -1,5 +1,6 @@
 *{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 #header nav{
@@ -9,6 +10,11 @@
     margin: 0 auto;
     align-items: center;
     border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+
+.logo{
+    width: 118px;
 }
 
 .logo img{
@@ -26,6 +32,8 @@
     font-size: 30px;
     font-weight: 700;
     cursor: text;
+    flex-shrink: 0;
+    margin: 0 auto;
 }
 
 .button-call{
@@ -38,4 +46,120 @@
     font-weight: 600;
     flex-shrink: 0;
 }
+
 /* above are the style settings for the header */
+
+main #container{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header, .name-info, .summary{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.name-info .my-name, .profession{
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-name{
+    font-size: 30px;
+    margin: 32px 0 8px 0;
+    padding: 0 auto;
+}
+
+.profession{
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 0 32px 0;
+    padding: 0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 0 solid;
+    background-color: rgba(169, 231, 255, 0.404);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.greet{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 16px 0 16px 0;
+    padding: 0 auto;
+    justify-content: space-around;
+}
+
+.summary .greet, .text-summary{
+    flex-direction: column;
+    display: flex;
+    line-height: 26px;
+    text-align: justify;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.text-summary{
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.lets-connect{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.lets-connect .button-social{
+    background-color: rgba(96, 184, 255, 0.904);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin-left: 6px;
+}
+
+/* above are the style settings for the summary section */
+
+.my-works{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.my-works img{
+    flex: 1 calc(50% - 10px);
+    object-fit: cover;
+}

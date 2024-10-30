@@ -1,179 +1,166 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    margin: 0;
 }
 
-#header nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    margin: 0 auto;
-    align-items: center;
-    border-bottom: 2px solid rgb(240, 240, 240);
-}
-
-
-.logo{
-    width: 118px;
-}
-
-.logo img{
-    display: flex;
-    max-width: 100%;
-    border-radius: 30px;
-    flex-shrink: 0;
-}
-
-.portfolio{
-    display: flex;
-    text-decoration: none;
-    color: rgb(17, 24, 28);
-    padding: 8px;
-    font-size: 30px;
-    font-weight: 700;
-    cursor: text;
-    flex-shrink: 0;
-    margin: 0 auto;
-}
-
-.button-call{
-    display: flex;
-    text-decoration: none;
-    background-color: rgb(17, 24, 28);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-weight: 600;
-    flex-shrink: 0;
-}
-
-/* above are the style settings for the header */
-
-main #container{
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.header, .name-info, .summary{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+/* Header */
+header{
+    border-bottom: 1px solid #dadada;
 }
 
 .header{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin: 4px auto;
+}
+
+.logo{
+    width: 87.14px;
+    display: flex;
+}
+
+.header img{
+    width: 40px;
+    border-radius: 20px;
+}
+
+.title{
+    font-weight: 600;
+    font-size:32px;
+    letter-spacing: 2px;
+}
+
+.contact{
+    display: flex;
+    background-color: #333;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* name */
+.my-name{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 32px;
+    height: 140px;
+    margin: 32px;
 }
 
-.name-info .my-name, .profession{
-    display: flex;
-    justify-content: space-around;
-}
-
-.my-name{
-    font-size: 30px;
-    margin: 32px 0 8px 0;
-    padding: 0 auto;
+.name{
+    margin: 0 0 4px 0;
+    font-size: 36px;
 }
 
 .profession{
-    font-size: 16px;
+    margin: 0 auto;
+    font-size: 20px;
     font-style: italic;
-    margin: 0 0 32px 0;
-    padding: 0 auto;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-}
-
-.note{
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    border: 0 solid;
-    background-color: rgba(169, 231, 255, 0.404);
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 16px 32px;
-    justify-content: space-around;
-    align-items: start;
-    flex-wrap: wrap;
-}
-
-.greet{
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    font-weight: 600;
-    margin: 16px 0 16px 0;
-    padding: 0 auto;
-    justify-content: space-around;
-}
-
-.summary .greet, .text-summary{
-    flex-direction: column;
-    display: flex;
-    line-height: 26px;
-    text-align: justify;
-    justify-content: start;
-    align-items: start;
-    flex-wrap: wrap;
-}
-
-.text-summary{
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
-.lets-connect{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-}
-
-.lets-connect .button-social{
-    background-color: rgba(96, 184, 255, 0.904);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    padding: 8px 16px;
-    margin-left: 6px;
-}
-
-/* above are the style settings for the summary section */
-
-.works{
+/* summary */
+.my-summary{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    border-bottom: 3px solid rgb(240, 240, 240);
+    padding: 0 0 32px 0;
+    border-bottom: 2px solid #dadada;
+    margin-bottom: 32px;
+}
+
+.summary-space{
+    width: 500px;
+    background-color: #333;
+    color: white;
+    border-radius: 16px;
+    padding: 32px 40px 32px 40px;
+    margin: 0 32px 0 32px;
+}
+
+.greet{
+    font-weight: 800;
+    margin: 0 0 14px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.summary{
+    margin: 0 0 14px 0;
+    text-align: justify;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.iamon{
+    font-size: 14px;
+}
+
+.summary-space p a{
+    color: white;
+}
+
+/* subtitle */
+.subtitle{
+    margin: 0 48px 16px 48px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dadada;
+}
+
+.title-works{
+    font-weight: 800;
+    margin: 0 auto;
+}
+.subtitle-works{
+    margin: 0 auto;
+}
+
+/* Gallery */
+.gallery-space{
+    margin: 0 48px 16px 48px;
+}
+
+.gallery{
+    width: 100%;
+    columns: 140px 3;
+}
+
+.gallery img{
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border: 1px solid #777777;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* footer */
+.footer-space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    height: 50px;
+}
+
+.footer{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.session{
+    margin-left: 48px;
     font-weight: 600;
-    padding: 8px auto;
-    margin: 8px auto;
 }
 
-.my-works{
-    padding-top: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    justify-content: space-around;
-    align-content: center;
+.task{
+    font-weight: 600;
 }
 
-.my-works div img{
-    display: flex;
-    width: 120px;
-    border-radius: 4px;
+.made{
+    margin-right: 48px;
+    font-weight: 600;
 }
